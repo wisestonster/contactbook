@@ -13,7 +13,7 @@ mongoose.set('useUnifiedTopology', true); // 1
 mongoose.connect(process.env.MONGO_DB); // 2
 var db = mongoose.connection; //3
 
-// DB Open
+// DB Open!
 db.once('open', function () {
     console.log('DB connected');
 });
