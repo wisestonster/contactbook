@@ -2,7 +2,7 @@
 
 var express = require('express');
 var router = express.Router();
-var Contact = require('../models/Contact'); // 1
+var Contact = require('../models/contact'); // 1
 
 // Index
 router.get('/', function(req, res){

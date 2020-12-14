@@ -1,5 +1,4 @@
 <!-- views/contacts/edit.ejs -->
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,23 +7,23 @@
   <body>
     <%- include('../partials/nav') %>
 
-    <div class="contact contact-edit">
-      <h2>주소록 수정</h2>
+    <div class="container contact contact-edit">
+      <h2>Edit</h2>
       <form class="contact-form" action="/contacts/<%= contact._id %>?_method=put" method="post">
-        <div>
-          <label for="name">이름</label>
-          <input type="text" id="name" name="name" value="<%= contact.name %>">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" value="<%= contact.name %>" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" value="<%= contact.email %>" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" name="phone" value="<%= contact.phone %>" class="form-control">
         </div>
         <div>
-          <label for="email">이메일</label>
-          <input type="text" id="email" name="email" value="<%= contact.email %>">
-        </div>
-        <div>
-          <label for="phone">전화번호</label>
-          <input type="text" id="phone" name="phone" value="<%= contact.phone %>">
-        </div>
-        <div>
-          <button type="submit">수정</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </div>
     </form>

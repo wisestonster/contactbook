@@ -1,9 +1,16 @@
 <!-- views/partials/nav.ejs -->
 
-<nav>
-    <div>주소록 (Contact Address)</div>
-    <ul>
-      <li><a href="/contacts">목록</a></li>
-      <li><a href="/contacts/new">신규등록</a></li>
-    </ul>
+<nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
+    <div class="container">
+      <div class="navbar-brand">주소록 (Contact Book)</div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="/contacts" class="nav-link">목록</a></li>
+          <li class="nav-item"><a href="/contacts/new" class="nav-link">신규등록</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
